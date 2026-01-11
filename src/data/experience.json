@@ -1,0 +1,47 @@
+[
+    {
+        "id": "nordic-exploration",
+        "date": "05/2025",
+        "title": "Nordic Tech Exploration",
+        "company": "Personal Project",
+        "location": "Stockholm, Sweden",
+        "description": "Explored the Scandinavian startup ecosystem and design principles. Attended local tech meetups focusing on sustainable software engineering.",
+        "type": "personal"
+    },
+    {
+        "id": "hogarth-intern",
+        "date": "07/2024 - 12/2024",
+        "title": "Full Stack Developer, Intern",
+        "company": "Hogarth Worldwide",
+        "location": "Madrid, Spain",
+        "description": "Developed automation infrastructure generating €5M in annual savings. Built scalable React applications and Node.js microservices.",
+        "type": "work"
+    },
+    {
+        "id": "justice-helsinki",
+        "date": "01/2024 - 06/2024",
+        "title": "Software Engineer",
+        "company": "Justice 4.0 Initiative",
+        "location": "Helsinki, Finland",
+        "description": "Built the Lady Justice AI platform using Azure ML SDK, React, and Python. Contributed to legal dataset structuring for LLM training.",
+        "type": "work"
+    },
+    {
+        "id": "brussels-study",
+        "date": "09/2022 - 12/2023",
+        "title": "Computer Engineering Student",
+        "company": "Université Libre de Bruxelles",
+        "location": "Brussels, Belgium",
+        "description": "Focused on distributed systems, cloud architecture, and human-computer interaction. Dean's list recognition.",
+        "type": "education"
+    },
+    {
+        "id": "istanbul-origin",
+        "date": "06/09/2000",
+        "title": "Origin Story",
+        "company": "Life",
+        "location": "Istanbul, Turkey",
+        "description": "Where it all began. A curious mind fascinated by how things work.",
+        "type": "personal"
+    }
+]

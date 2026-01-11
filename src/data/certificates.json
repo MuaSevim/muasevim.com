@@ -1,0 +1,30 @@
+[
+    {
+        "id": "aws-cloud-practitioner",
+        "title": "AWS Cloud Practitioner",
+        "issuer": "Amazon Web Services",
+        "date": "2024",
+        "credentialUrl": "https://aws.amazon.com/verification"
+    },
+    {
+        "id": "azure-fundamentals",
+        "title": "Azure Fundamentals (AZ-900)",
+        "issuer": "Microsoft",
+        "date": "2024",
+        "credentialUrl": "https://learn.microsoft.com/certifications"
+    },
+    {
+        "id": "meta-frontend",
+        "title": "Meta Front-End Developer",
+        "issuer": "Meta",
+        "date": "2023",
+        "credentialUrl": "https://coursera.org/verify"
+    },
+    {
+        "id": "google-ux",
+        "title": "Google UX Design",
+        "issuer": "Google",
+        "date": "2023",
+        "credentialUrl": "https://coursera.org/verify"
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "id": "building-ai-legal-platform",
+        "title": "Building an AI-Powered Legal Platform: Lessons from Justice 4.0",
+        "excerpt": "How we architected Lady Justice using Azure ML SDK, and the challenges of structuring legal datasets for LLM training.",
+        "date": "2024-11-15",
+        "readTime": "8 min read",
+        "url": "https://medium.com/@muasevim/building-ai-legal-platform"
+    },
+    {
+        "id": "automation-enterprise-savings",
+        "title": "How We Saved €5M with Smart Automation",
+        "excerpt": "A deep dive into the CI/CD pipelines and monitoring systems that transformed enterprise workflows at Hogarth.",
+        "date": "2024-08-22",
+        "readTime": "6 min read",
+        "url": "https://medium.com/@muasevim/automation-enterprise-savings"
+    },
+    {
+        "id": "p2p-logistics-architecture",
+        "title": "Designing a P2P Logistics Platform: The Raven Story",
+        "excerpt": "From concept to code: building real-time logistics with NestJS, Stream API, and React Native.",
+        "date": "2024-05-10",
+        "readTime": "10 min read",
+        "url": "https://medium.com/@muasevim/p2p-logistics-architecture"
+    },
+    {
+        "id": "nordic-tech-ecosystem",
+        "title": "What I Learned from the Nordic Tech Ecosystem",
+        "excerpt": "Reflections on sustainable software engineering and design principles from Stockholm and Helsinki.",
+        "date": "2025-06-01",
+        "readTime": "5 min read",
+        "url": "https://medium.com/@muasevim/nordic-tech-ecosystem"
+    }
+]

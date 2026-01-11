@@ -1,0 +1,26 @@
+[
+    {
+        "id": "ref-1",
+        "name": "John Smith",
+        "title": "Engineering Director",
+        "company": "Hogarth Worldwide",
+        "quote": "Muhammed is one of the most talented engineers I've worked with. His ability to tackle complex problems while maintaining clean, scalable code is exceptional.",
+        "linkedin": "https://linkedin.com/in/johnsmith"
+    },
+    {
+        "id": "ref-2",
+        "name": "Maria Virtanen",
+        "title": "CTO",
+        "company": "Justice 4.0",
+        "quote": "His work on our AI legal infrastructure was transformative. Muhammed combines deep technical expertise with a genuine understanding of business needs.",
+        "linkedin": "https://linkedin.com/in/mariavirtanen"
+    },
+    {
+        "id": "ref-3",
+        "name": "Ahmed Hassan",
+        "title": "Product Lead",
+        "company": "TechStartup Inc",
+        "quote": "A rare engineer who thinks like a product owner. Muhammed doesn't just build features—he builds solutions that users love.",
+        "linkedin": "https://linkedin.com/in/ahmedhassan"
+    }
+]

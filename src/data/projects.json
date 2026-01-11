@@ -1,0 +1,60 @@
+[
+    {
+        "id": "raven",
+        "category": "STARTUP VENTURE",
+        "title": "Raven - P2P International Logistics Platform",
+        "description": "A peer-to-peer platform revolutionizing international package delivery by connecting travelers with senders.",
+        "bullets": [
+            "Architected backend using NestJS and TypeScript with a focus on scalability and real-time operations.",
+            "Integrated Stream API for secure real-time chat and Azure AD B2C for authentication.",
+            "Developed the cross-platform mobile frontend using React Native with Expo and Tamagui for a performant and fast user experience."
+        ],
+        "technologies": [
+            "NestJS",
+            "TypeScript",
+            "Stream API",
+            "Azure AD B2C",
+            "React Native",
+            "Expo",
+            "Tamagui"
+        ],
+        "link": "https://github.com/muasevim/raven"
+    },
+    {
+        "id": "lady-justice",
+        "category": "JUSTICE 4.0",
+        "title": "Lady Justice AI - Legal Platform",
+        "description": "An AI-powered legal platform that processes and analyzes legal documents for enhanced accessibility.",
+        "bullets": [
+            "Built data pipelines using Azure ML SDK for ingestion and preparation of structured and unstructured legal datasets.",
+            "Developed full-stack modules (React, Node.js, Python) that powered key AI-driven platform functionality.",
+            "Contributed to dataset structuring used for the platform's LLM training."
+        ],
+        "technologies": [
+            "Azure ML SDK",
+            "React",
+            "Node.js",
+            "Python"
+        ],
+        "link": null
+    },
+    {
+        "id": "hogarth",
+        "category": "ENTERPRISE",
+        "title": "€5M Automation Infrastructure",
+        "description": "Led the development of automation systems that generated €5M in annual savings for enterprise clients.",
+        "bullets": [
+            "Designed and implemented CI/CD pipelines reducing deployment time by 70%.",
+            "Built monitoring dashboards for real-time performance tracking.",
+            "Collaborated with cross-functional teams across Madrid and Brussels offices."
+        ],
+        "technologies": [
+            "Docker",
+            "Kubernetes",
+            "AWS",
+            "Terraform",
+            "Python"
+        ],
+        "link": null
+    }
+]

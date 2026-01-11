@@ -1,0 +1,98 @@
+[
+  {
+    "id": "istanbul",
+    "name": "Istanbul",
+    "country": "Turkey",
+    "coordinates": [28.9784, 41.0082],
+    "description": "The city that bridges worlds",
+    "memories": [
+      {
+        "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&h=600&fit=crop",
+        "caption": "Where East meets West - the Bosphorus at sunset",
+        "year": "2018"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=800&h=600&fit=crop",
+        "caption": "Late nights coding with a view of the city lights",
+        "year": "2019"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1527838832700-5059252407fa?w=800&h=600&fit=crop",
+        "caption": "The historic heart that never stops beating",
+        "year": "2020"
+      }
+    ]
+  },
+  {
+    "id": "madrid",
+    "name": "Madrid",
+    "country": "Spain",
+    "coordinates": [-3.7038, 40.4168],
+    "description": "Hogarth Worldwide - €5M Automation",
+    "memories": [
+      {
+        "image": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800&h=600&fit=crop",
+        "caption": "First day at Hogarth - ready to change everything",
+        "year": "2021"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=800&h=600&fit=crop",
+        "caption": "Building automation that saved €5M",
+        "year": "2022"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1559386484-97dfc0e15539?w=800&h=600&fit=crop",
+        "caption": "Gran Vía nights after shipping features",
+        "year": "2023"
+      }
+    ]
+  },
+  {
+    "id": "helsinki",
+    "name": "Helsinki",
+    "country": "Finland",
+    "coordinates": [23.974509, 60.351103],
+    "description": "Justice 4.0 - Lady Justice AI Platform",
+    "memories": [
+      {
+        "image": "https://images.unsplash.com/photo-1538332576228-eb5b4c4de6f5?w=800&h=600&fit=crop",
+        "caption": "Nordic winters and groundbreaking AI work",
+        "year": "2024"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1529154166925-574a0236a4f4?w=800&h=600&fit=crop",
+        "caption": "Building Lady Justice - AI for the legal system",
+        "year": "2024"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?w=800&h=600&fit=crop",
+        "caption": "Midnight sun and endless code sessions",
+        "year": "2025"
+      }
+    ]
+  },
+  {
+    "id": "brussels",
+    "name": "Brussels",
+    "country": "Belgium",
+    "coordinates": [4.3517, 50.8503],
+    "description": "Université Libre de Bruxelles - Computer Engineering",
+    "memories": [
+      {
+        "image": "https://images.unsplash.com/photo-1559113513-d5e09c78b9dd?w=800&h=600&fit=crop",
+        "caption": "Where I became an engineer - ULB campus life",
+        "year": "2017"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1549989476-69a92fa57c36?w=800&h=600&fit=crop",
+        "caption": "Grand Place nights after exams",
+        "year": "2018"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+        "caption": "Graduation day - BSc Computer Engineering",
+        "year": "2020"
+      }
+    ]
+  }
+]
