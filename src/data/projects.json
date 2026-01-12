@@ -1,60 +1,189 @@
 [
-    {
-        "id": "raven",
-        "category": "STARTUP VENTURE",
-        "title": "Raven - P2P International Logistics Platform",
-        "description": "A peer-to-peer platform revolutionizing international package delivery by connecting travelers with senders.",
-        "bullets": [
-            "Architected backend using NestJS and TypeScript with a focus on scalability and real-time operations.",
-            "Integrated Stream API for secure real-time chat and Azure AD B2C for authentication.",
-            "Developed the cross-platform mobile frontend using React Native with Expo and Tamagui for a performant and fast user experience."
-        ],
-        "technologies": [
-            "NestJS",
-            "TypeScript",
-            "Stream API",
-            "Azure AD B2C",
-            "React Native",
-            "Expo",
-            "Tamagui"
-        ],
-        "link": "https://github.com/muasevim/raven"
-    },
-    {
-        "id": "lady-justice",
-        "category": "JUSTICE 4.0",
-        "title": "Lady Justice AI - Legal Platform",
-        "description": "An AI-powered legal platform that processes and analyzes legal documents for enhanced accessibility.",
-        "bullets": [
-            "Built data pipelines using Azure ML SDK for ingestion and preparation of structured and unstructured legal datasets.",
-            "Developed full-stack modules (React, Node.js, Python) that powered key AI-driven platform functionality.",
-            "Contributed to dataset structuring used for the platform's LLM training."
-        ],
-        "technologies": [
-            "Azure ML SDK",
-            "React",
-            "Node.js",
-            "Python"
-        ],
-        "link": null
-    },
-    {
-        "id": "hogarth",
-        "category": "ENTERPRISE",
-        "title": "€5M Automation Infrastructure",
-        "description": "Led the development of automation systems that generated €5M in annual savings for enterprise clients.",
-        "bullets": [
-            "Designed and implemented CI/CD pipelines reducing deployment time by 70%.",
-            "Built monitoring dashboards for real-time performance tracking.",
-            "Collaborated with cross-functional teams across Madrid and Brussels offices."
-        ],
-        "technologies": [
-            "Docker",
-            "Kubernetes",
-            "AWS",
-            "Terraform",
-            "Python"
-        ],
-        "link": null
-    }
+  {
+    "id": "raven",
+    "category": "STARTUP",
+    "title": "Raven - P2P Logistics",
+    "summary": "Revolutionizing international package delivery by connecting travelers with senders. Save up to 80% on shipping costs.",
+    "description": "A peer-to-peer platform revolutionizing international package delivery by connecting travelers with senders.",
+    "bullets": [
+      "Architected backend using NestJS and TypeScript with a focus on scalability and real-time operations.",
+      "Integrated Stream API for secure real-time chat and Azure AD B2C for authentication.",
+      "Developed the cross-platform mobile frontend using React Native with Expo and Tamagui for a performant and fast user experience."
+    ],
+    "technologies": ["NestJS", "TypeScript", "React Native", "Azure AD B2C"],
+    "link": "https://raven-logistics.app",
+    "github": "https://github.com/muasevim/raven",
+    "images": [],
+    "content": "Raven started from a simple observation: international shipping is expensive, yet millions of travelers fly with empty luggage space every day. What if we could connect these travelers with people who need to send packages abroad?\n\nThe platform enables senders to post their packages with pickup and delivery locations, while travelers can browse and accept deliveries along their route. Everyone wins - senders save up to 80% on shipping, travelers earn extra income, and we reduce carbon emissions.\n\n## Technical Architecture\n\nThe backend is built with NestJS and TypeScript, deployed on Azure with automatic scaling. Real-time chat between senders and travelers uses Stream API, ensuring secure and reliable communication.\n\nAuthentication is handled through Azure AD B2C, supporting social logins and enterprise SSO for our B2B customers.\n\nThe mobile app is built with React Native and Expo, using Tamagui for a consistent design system across iOS and Android."
+  },
+  {
+    "id": "lady-justice",
+    "category": "CONTRACT",
+    "title": "Lady Justice AI",
+    "summary": "AI-powered legal platform processing documents for enhanced accessibility. Built for Finland's Justice 4.0 initiative.",
+    "description": "An AI-powered legal platform that processes and analyzes legal documents for enhanced accessibility.",
+    "bullets": [
+      "Built data pipelines using Azure ML SDK for ingestion and preparation of structured and unstructured legal datasets.",
+      "Developed full-stack modules (React, Node.js, Python) that powered key AI-driven platform functionality.",
+      "Contributed to dataset structuring used for the platform's LLM training."
+    ],
+    "technologies": ["Azure ML SDK", "React", "Node.js", "Python"],
+    "link": "https://ladyjusticeai.com/",
+    "github": null,
+    "images": [],
+    "content": "Lady Justice AI is part of Finland's ambitious Justice 4.0 initiative to modernize the legal system using artificial intelligence.\n\nThe platform processes legal documents - court decisions, legislation, and legal precedents - making them searchable and accessible to legal professionals and citizens alike.\n\n## My Contribution\n\nI was responsible for building the data pipelines that ingest and prepare both structured and unstructured legal datasets. Using Azure ML SDK, I created workflows that extract, transform, and load millions of documents into our training corpus.\n\nOn the frontend, I developed React modules that allow users to interact with the AI, ask questions about legal matters, and receive contextual answers backed by relevant case law."
+  },
+  {
+    "id": "hogarth",
+    "category": "INTERNSHIP",
+    "title": "€5M Automation Infrastructure",
+    "summary": "Enterprise automation systems generating €5M in annual savings. Led CI/CD pipeline design reducing deployment time by 70%.",
+    "description": "Led the development of automation systems that generated €5M in annual savings for enterprise clients.",
+    "bullets": [
+      "Designed and implemented CI/CD pipelines reducing deployment time by 70%.",
+      "Built monitoring dashboards for real-time performance tracking.",
+      "Collaborated with cross-functional teams across Madrid and Brussels offices."
+    ],
+    "technologies": ["Docker", "Kubernetes", "AWS", "Terraform"],
+    "link": null,
+    "github": null,
+    "images": [],
+    "content": "During my internship at Hogarth Worldwide in Madrid, I had the opportunity to work on enterprise-scale automation infrastructure that directly impacted the company's bottom line.\n\n## The Challenge\n\nHogarth handles content production for major global brands. The manual processes for asset management, quality assurance, and deployment were time-consuming and error-prone.\n\n## The Solution\n\nI designed and implemented CI/CD pipelines using Docker, Kubernetes, and Terraform on AWS. These pipelines automated the entire content production workflow - from asset ingestion to quality checks to multi-platform deployment.\n\n## Impact\n\n- 70% reduction in deployment time\n- €5M in annual savings from automation\n- Real-time monitoring dashboards for performance tracking\n- Seamless collaboration between Madrid and Brussels teams"
+  },
+  {
+    "id": "ecommerce-platform",
+    "category": "FREELANCE",
+    "title": "E-Commerce Platform",
+    "summary": "Full-stack e-commerce solution with real-time inventory management. Scaled to handle 10K+ concurrent users.",
+    "description": "A scalable e-commerce platform built for high-traffic retail operations.",
+    "bullets": [
+      "Built with Next.js and Stripe for secure payment processing.",
+      "Implemented real-time inventory management with Redis.",
+      "Optimized for SEO with server-side rendering achieving 95+ Lighthouse score."
+    ],
+    "technologies": ["Next.js", "Stripe", "Redis", "PostgreSQL"],
+    "link": null,
+    "github": "https://github.com/muasevim/ecommerce",
+    "images": [],
+    "content": "A full-featured e-commerce platform handling payment processing, inventory management, and order fulfillment at scale."
+  },
+  {
+    "id": "health-tracker",
+    "category": "PERSONAL",
+    "title": "Health & Fitness Tracker",
+    "summary": "Mobile app for tracking workouts, nutrition, and health metrics. Integrated with wearable devices and health APIs.",
+    "description": "A comprehensive health tracking application with wearable integration.",
+    "bullets": [
+      "React Native app with cross-platform support.",
+      "Integration with Apple Health and Google Fit.",
+      "ML-powered insights for personalized recommendations."
+    ],
+    "technologies": ["React Native", "TensorFlow Lite", "Firebase"],
+    "link": null,
+    "github": "https://github.com/muasevim/health-tracker",
+    "images": [],
+    "content": "Personal health tracking app with machine learning insights for personalized fitness and nutrition recommendations."
+  },
+  {
+    "id": "task-manager",
+    "category": "OPEN SOURCE",
+    "title": "Collaborative Task Manager",
+    "summary": "Team collaboration tool with real-time updates. Kanban boards, time tracking, and integrations with popular tools.",
+    "description": "A modern task management application for distributed teams.",
+    "bullets": [
+      "Real-time collaboration using WebSockets.",
+      "Kanban and list views with drag-and-drop.",
+      "Integrations with Slack, GitHub, and Jira."
+    ],
+    "technologies": ["Vue.js", "Socket.io", "MongoDB"],
+    "link": "https://taskmanager.example.com",
+    "github": "https://github.com/muasevim/task-manager",
+    "images": [],
+    "content": "Open-source task management platform designed for remote teams with real-time synchronization and third-party integrations."
+  },
+  {
+    "id": "weather-app",
+    "category": "PERSONAL",
+    "title": "Hyperlocal Weather App",
+    "summary": "Weather forecasting with machine learning predictions. Combines multiple data sources for accurate hyperlocal forecasts.",
+    "description": "Advanced weather application with ML-powered predictions.",
+    "bullets": [
+      "Aggregates data from multiple weather APIs.",
+      "Custom ML model for hyperlocal predictions.",
+      "Beautiful visualizations with animated weather conditions."
+    ],
+    "technologies": ["React", "Python", "scikit-learn", "D3.js"],
+    "link": null,
+    "github": "https://github.com/muasevim/weather-ml",
+    "images": [],
+    "content": "Weather app leveraging machine learning to provide more accurate hyperlocal forecasts by combining multiple data sources."
+  },
+  {
+    "id": "blog-cms",
+    "category": "OPEN SOURCE",
+    "title": "Headless Blog CMS",
+    "summary": "Modern content management system with GraphQL API. Markdown support, media management, and multi-author workflows.",
+    "description": "A lightweight headless CMS for modern web applications.",
+    "bullets": [
+      "GraphQL API with type-safe queries.",
+      "Markdown editor with live preview.",
+      "Role-based access control for multi-author blogs."
+    ],
+    "technologies": ["GraphQL", "TypeScript", "PostgreSQL", "S3"],
+    "link": "https://cms.example.com",
+    "github": "https://github.com/muasevim/headless-cms",
+    "images": [],
+    "content": "Headless CMS built for developers who want full control over their content presentation layer with a powerful GraphQL API."
+  },
+  {
+    "id": "finance-dashboard",
+    "category": "CONTRACT",
+    "title": "Personal Finance Dashboard",
+    "summary": "Financial analytics platform with budget tracking and investment insights. Bank integrations via Plaid API.",
+    "description": "Comprehensive personal finance management application.",
+    "bullets": [
+      "Bank account integration via Plaid API.",
+      "Automated categorization and budget tracking.",
+      "Investment portfolio analysis with real-time data."
+    ],
+    "technologies": ["React", "Plaid API", "Chart.js", "Node.js"],
+    "link": null,
+    "github": null,
+    "images": [],
+    "content": "Finance dashboard that helps users track spending, manage budgets, and analyze investment portfolios with bank integrations."
+  },
+  {
+    "id": "ai-chatbot",
+    "category": "PERSONAL",
+    "title": "AI Customer Support Bot",
+    "summary": "Intelligent chatbot with natural language understanding. Handles 80% of common customer queries automatically.",
+    "description": "AI-powered customer support automation.",
+    "bullets": [
+      "NLP model trained on customer support conversations.",
+      "Seamless handoff to human agents when needed.",
+      "Analytics dashboard for conversation insights."
+    ],
+    "technologies": ["Python", "OpenAI API", "FastAPI", "React"],
+    "link": null,
+    "github": "https://github.com/muasevim/ai-support-bot",
+    "images": [],
+    "content": "Customer support chatbot using OpenAI's GPT models to handle common queries and escalate complex issues to human agents."
+  },
+  {
+    "id": "video-editor",
+    "category": "FREELANCE",
+    "title": "Browser-Based Video Editor",
+    "summary": "Web-based video editing tool with timeline editing and effects. No downloads required, works entirely in the browser.",
+    "description": "A powerful video editor running entirely in the browser.",
+    "bullets": [
+      "WebAssembly for high-performance video processing.",
+      "Timeline-based editing with transitions and effects.",
+      "Export in multiple formats and resolutions."
+    ],
+    "technologies": ["WebAssembly", "FFmpeg.wasm", "React", "Canvas API"],
+    "link": "https://videoeditor.example.com",
+    "github": null,
+    "images": [],
+    "content": "Browser-based video editor leveraging WebAssembly and FFmpeg for professional video editing without software installation."
+  }
 ]

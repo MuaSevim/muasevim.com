@@ -2,14 +2,24 @@
 // TYPE DEFINITIONS - STRICT TYPING
 // ============================================
 
+export interface ProjectImage {
+    src: string;
+    alt: string;
+    caption?: string;
+}
+
 export interface Project {
     id: string;
     category: string;
     title: string;
     description: string;
+    summary: string; // 2-line summary for card
     bullets: string[];
     technologies: string[];
     link?: string;
+    github?: string;
+    images?: ProjectImage[];
+    content?: string; // Detailed markdown content
 }
 
 export interface Experience {
@@ -31,7 +41,9 @@ export interface LocationMemory {
 export interface Location {
     id: string;
     name: string;
+    city?: string;
     country: string;
+    period?: string;
     coordinates: [number, number]; // [longitude, latitude]
     description?: string;
     memories?: LocationMemory[];
@@ -101,5 +113,5 @@ export const PERSONAL_INFO = {
     name: 'Mua Sevim',
     fullName: 'Muhammed Sevim',
     title: 'Computer Engineer',
-    logo: 'MUA.',
+    logo: 'MUA',
 } as const;

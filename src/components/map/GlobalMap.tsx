@@ -305,7 +305,7 @@ export const GlobalMap = () => {
     }, []);
 
     return (
-        <section className="py-24 bg-white">
+        <section className="py-24 bg-white relative">
             <div className="container mx-auto px-6">
                 <div className="max-w-6xl mx-auto">
                     {/* Header */}
