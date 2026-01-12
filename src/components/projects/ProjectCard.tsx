@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 import type { Project } from "@/types";
 
 interface ProjectCardProps {
@@ -11,57 +12,52 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ project, index }: ProjectCardProps) => {
     return (
-        <motion.article
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="group border border-gray-200 hover:border-black bg-white p-6 transition-all"
-        >
-            {/* Category */}
-            <div className="flex items-start justify-between mb-4">
-                <span className="text-xs font-semibold px-3 py-1 bg-black text-white">
-                    {project.category}
-                </span>
-                {project.link && (
-                    <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-black transition-colors"
-                        aria-label={`View ${project.title}`}
-                    >
-                        <ArrowUpRight size={18} />
-                    </a>
-                )}
-            </div>
-
-            {/* Title */}
-            <h3 className="text-xl font-bold mb-3 leading-tight">
-                {project.title}
-            </h3>
-
-            {/* Bullets */}
-            <ul className="space-y-2 mb-6">
-                {project.bullets.map((bullet, i) => (
-                    <li key={i} className="text-sm text-gray-600 leading-relaxed flex gap-2">
-                        <span className="text-gray-400 shrink-0">•</span>
-                        <span>{bullet}</span>
-                    </li>
-                ))}
-            </ul>
-
-            {/* Technologies */}
-            <div className="flex flex-wrap gap-2">
-                {project.technologies.map((tech) => (
-                    <span
-                        key={tech}
-                        className="text-xs px-3 py-1 border border-gray-200 bg-gray-50 text-gray-600"
-                    >
-                        {tech}
+        <Link href={`/projects/${project.id}`}>
+            <motion.article
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="group border border-gray-200 bg-white p-5 transition-all duration-300 ease-out hover:border-black hover:shadow-sm cursor-pointer h-full flex flex-col"
+            >
+                {/* Category Badge */}
+                <div className="flex items-start justify-between mb-3">
+                    <span className="text-[10px] font-semibold px-2 py-0.5 bg-black text-white uppercase tracking-wide">
+                        {project.category}
                     </span>
-                ))}
-            </div>
-        </motion.article>
+                    <ArrowUpRight 
+                        size={16} 
+                        className="text-gray-300 group-hover:text-black transition-colors duration-300" 
+                    />
+                </div>
+
+                {/* Title */}
+                <h3 className="text-lg font-bold mb-2 leading-tight group-hover:text-gray-700 transition-colors duration-300">
+                    {project.title}
+                </h3>
+
+                {/* Summary - 2 lines max */}
+                <p className="text-sm text-gray-600 leading-relaxed line-clamp-2 mb-4 flex-grow">
+                    {project.summary || project.description}
+                </p>
+
+                {/* Technologies */}
+                <div className="flex flex-wrap gap-1.5 mt-auto">
+                    {project.technologies.slice(0, 4).map((tech) => (
+                        <span
+                            key={tech}
+                            className="text-[10px] px-2 py-0.5 border border-gray-200 bg-gray-50 text-gray-500"
+                        >
+                            {tech}
+                        </span>
+                    ))}
+                    {project.technologies.length > 4 && (
+                        <span className="text-[10px] px-2 py-0.5 text-gray-400">
+                            +{project.technologies.length - 4}
+                        </span>
+                    )}
+                </div>
+            </motion.article>
+        </Link>
     );
 };

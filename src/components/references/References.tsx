@@ -10,7 +10,7 @@ export const References = () => {
     const references = referencesData as Reference[];
 
     return (
-        <section id="references" className="py-24 bg-white">
+        <section id="references" className="py-24 bg-white relative">
             <div className="container mx-auto px-6">
                 <div className="max-w-6xl mx-auto">
                     {/* Header */}

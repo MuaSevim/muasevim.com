@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { PERSONAL_INFO } from "@/types";
 
 const NAV_LINKS = [
-    { href: "#terminal", label: "Ask Me" },
-    { href: "#projects", label: "Work" },
-    { href: "#journey", label: "Journey" },
-    { href: "#contact", label: "Contact" },
+    { href: "#projects", label: "Projects" },
+    { href: "#journey", label: "Experiences" },
+    { href: "#certificates", label: "Certifications" },
+    { href: "#references", label: "References" },
 ] as const;
 
 export const Header = () => {
@@ -34,6 +34,12 @@ export const Header = () => {
                             {link.label}
                         </a>
                     ))}
+                    <a
+                        href="#contact"
+                        className="px-6 py-2 bg-black text-white hover:bg-gray-800 transition-colors"
+                    >
+                        Contact
+                    </a>
                 </nav>
             </div>
         </motion.header>

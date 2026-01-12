@@ -1,26 +1,36 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Download, ExternalLink } from "lucide-react";
+import { Mail, Github, Linkedin, Download } from "lucide-react";
 import { useState } from "react";
 import { SOCIAL_LINKS, FADE_IN_UP } from "@/types";
+
+// Medium icon as SVG component
+const MediumIcon = ({ size = 20 }: { size?: number }) => (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+    </svg>
+);
 
 // ============================================
 // CONSTANTS
 // ============================================
 
-const SOCIAL_CARDS = [
+const SOCIAL_LINKS_DATA = [
     {
         icon: Github,
         label: "GitHub",
         href: SOCIAL_LINKS.github,
-        username: "@muasevim",
     },
     {
         icon: Linkedin,
         label: "LinkedIn",
         href: SOCIAL_LINKS.linkedin,
-        username: "/in/muasevim",
+    },
+    {
+        icon: MediumIcon,
+        label: "Medium",
+        href: "https://medium.com/@muasevim",
     },
 ] as const;
 
@@ -39,7 +49,7 @@ export const Contact = () => {
     };
 
     return (
-        <section id="contact" className="py-24 bg-gray-50">
+        <section id="contact" className="py-24 bg-white relative">
             <div className="container mx-auto px-6 max-w-4xl">
                 {/* Title */}
                 <motion.div
@@ -47,7 +57,7 @@ export const Contact = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-                        Let's Build Together
+                        Let's Make Ideas Reality!
                     </h2>
                     <p className="text-gray-600 text-lg max-w-xl mx-auto">
                         Available for freelance projects, consulting, or full-time opportunities.
@@ -80,30 +90,22 @@ export const Contact = () => {
                     </div>
                 </motion.div>
 
-                {/* Social Links */}
+                {/* Social Links - Icon Only */}
                 <motion.div
                     {...FADE_IN_UP}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="grid md:grid-cols-2 gap-4"
+                    className="flex items-center justify-center gap-6"
                 >
-                    {SOCIAL_CARDS.map((link) => (
+                    {SOCIAL_LINKS_DATA.map((link) => (
                         <a
                             key={link.label}
                             href={link.href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group flex items-center justify-between p-6 border border-gray-200 hover:border-black transition-all"
+                            className="p-3 text-gray-600 hover:text-black transition-colors"
+                            aria-label={link.label}
                         >
-                            <div className="flex items-center gap-4">
-                                <div className="p-3 bg-gray-50 group-hover:bg-black group-hover:text-white transition-all">
-                                    <link.icon size={24} />
-                                </div>
-                                <div>
-                                    <p className="font-medium text-black">{link.label}</p>
-                                    <p className="text-sm text-gray-500">{link.username}</p>
-                                </div>
-                            </div>
-                            <ExternalLink size={16} className="text-gray-400 group-hover:text-black transition-colors" />
+                            <link.icon size={24} />
                         </a>
                     ))}
                 </motion.div>

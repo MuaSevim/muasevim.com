@@ -19,7 +19,7 @@ export const Certificates = () => {
     const certificates = showAll ? allCertificates : allCertificates.slice(0, INITIAL_COUNT);
 
     return (
-        <section id="certificates" className="py-24 bg-gray-50">
+        <section id="certificates" className="py-24 bg-gray-50 relative">
             <div className="container mx-auto px-6">
                 <div className="max-w-6xl mx-auto">
                     {/* Header */}

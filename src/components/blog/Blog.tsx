@@ -16,7 +16,7 @@ export const Blog = () => {
     const articles = (articlesData as Article[]).slice(0, DISPLAY_COUNT);
 
     return (
-        <section id="blog" className="py-24 bg-gray-50">
+        <section id="blog" className="py-24 bg-gray-50 relative">
             <div className="container mx-auto px-6">
                 <div className="max-w-6xl mx-auto">
                     {/* Header */}
@@ -42,7 +42,7 @@ export const Blog = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                                className="group p-6 border border-gray-200 hover:border-black bg-gray-50 hover:bg-white transition-all"
+                                className="group p-6 border border-gray-200 hover:border-black bg-white hover:shadow-md transition-all"
                             >
                                 {/* Meta */}
                                 <div className="flex items-center gap-2 text-xs text-gray-400 mb-3">

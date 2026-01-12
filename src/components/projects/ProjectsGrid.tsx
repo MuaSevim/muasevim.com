@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { ProjectCard } from "./ProjectCard";
 import type { Project } from "@/types";
 import projectsData from "@/data/projects.json";
 import { FADE_IN_UP } from "@/types";
 
-const INITIAL_COUNT = 4;
+const INITIAL_COUNT = 3;
 
 export const ProjectsGrid = () => {
     const allProjects = projectsData as Project[];
@@ -15,7 +15,7 @@ export const ProjectsGrid = () => {
     const projects = showAll ? allProjects : allProjects.slice(0, INITIAL_COUNT);
 
     return (
-        <section id="projects" className="py-24 bg-gray-50">
+        <section id="projects" className="py-24 bg-gray-50 relative">
             <div className="container mx-auto px-6">
                 <div className="max-w-6xl mx-auto">
                     {/* Header */}
@@ -26,24 +26,26 @@ export const ProjectsGrid = () => {
                         </p>
                     </motion.div>
 
-                    {/* Grid */}
-                    <div className="grid md:grid-cols-2 gap-4">
-                        {projects.map((project, index) => (
-                            <ProjectCard key={project.id} project={project} index={index} />
-                        ))}
+                    {/* Grid - 3 columns */}
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <AnimatePresence mode="popLayout">
+                            {projects.map((project, index) => (
+                                <ProjectCard key={project.id} project={project} index={index} />
+                            ))}
+                        </AnimatePresence>
                     </div>
 
                     {/* See All Button */}
                     {!showAll && allProjects.length > INITIAL_COUNT && (
                         <motion.div
                             {...FADE_IN_UP}
-                            className="mt-8 text-center"
+                            className="mt-12 text-center"
                         >
                             <button
                                 onClick={() => setShowAll(true)}
-                                className="text-sm font-medium text-gray-600 hover:text-black border-b border-gray-300 hover:border-black transition-all"
+                                className="px-8 py-3 text-sm font-medium text-gray-700 hover:text-black border border-gray-300 hover:border-black transition-all hover:shadow-sm"
                             >
-                                See all {allProjects.length} projects
+                                See All Projects
                             </button>
                         </motion.div>
                     )}
