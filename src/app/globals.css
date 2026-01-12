@@ -231,26 +231,3 @@ section {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
-
-/* ============================================
-   LEAFLET MAP MARKER OVERRIDES
-   ============================================ */
-
-.custom-pin-marker {
-  background: transparent !important;
-  border: none !important;
-}
-
-.custom-pin-marker > div {
-  transform: translate(-50%, -100%);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.custom-pin-marker:hover > div {
-  transform: translate(-50%, -100%) scale(1.05);
-}
-
-.custom-pin-marker > div > div:first-child:hover {
-  border-color: black !important;
-  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1) !important;
-}
